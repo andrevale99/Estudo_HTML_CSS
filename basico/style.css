@@ -12,7 +12,7 @@ a:link
 /* Link que já foi visitado*/
 a:visited
 {
-    color: yellow;
+    color: crimson;
 }
 
 /*Ativo quando o usuário está com o mouse sobre o link*/

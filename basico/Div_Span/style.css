@@ -1,0 +1,31 @@
+#div_exa
+{
+    background-color: aqua;
+}
+
+#span_exa
+{
+    background-color: brown;
+}
+
+#span_exa_2
+{
+    background-color: blue;
+    display: inline-block;
+    width: 30%;
+    height: 5cm;
+    padding: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#span_exa_3
+{
+    background-color: red;
+    display: inline-block;
+    width: 70%;
+    height: 5cm;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+}

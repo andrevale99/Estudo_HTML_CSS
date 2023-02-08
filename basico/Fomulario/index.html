@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Formulário</h1>
+        <p>
+            Criação de um formulário, possuindo vários tipos de entrada, como também algumas manipulações em DOM
+            com javascript.
+        </p>
+        <hr>
+
+        <!-- No atributo "action" deve-se colocar o link do servidor que ira receber os dados
+
+        "Perceba que foi utilizado o método GET para envio dos dados. Esse método utiliza o próprio endereço (URL) 
+        para transferir os dados ao servidor. Além do método GET, existe o método POST, 
+        que envia os dados no corpo da requisição HTTP e que por isso não aparece na URL ao usuário."
+        (IMD, Aula 07 - Formulários)
+        -->
+
+        <!--
+            "Perceba que foi necessário definir o atributo name para cada campo de entrada do formulário. 
+            A definição do atributo "name" serve para facilitar a identificação do campo no 
+            formulário pelo programa escrito no servidor."
+            IMD, Aula 07 - Formulários)
+        -->
+        <form action="" method="GET">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome"  id="nome">
+
+            <br><br>
+
+            <label for="idade">Idade</label>
+            <input type="number" min="0" id="idade">
+
+            <br><br>
+
+            <input type="radio" name="genero" value="Masculino" id="radio_M"> Masculino
+            <input type="radio" name="genero" value="Feminino" id="radio_F"> Feminino
+            <input type="radio" name="genero" value="Outro" id="radio_O"> Outro
+            
+            <br><br>
+
+            <input type="checkbox" name="carro" value="carro" id="check_carro">Carro
+            <input type="checkbox" name="moto" value="moto" id="check_moto">Moto
+
+            <br><br>
+
+            <input type="submit" value="Enviar" id="send_data">
+        </form>
+    </body>
+</html>

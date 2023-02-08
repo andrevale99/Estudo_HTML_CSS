@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabelas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Página para Criação e Manipulação de Tabelas em HTML</h1>
+        
+        <hr>
+
+        <p>Criaçãode uma tabela simples</p>
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+            </tr>
+            <tr>
+                <td>Andre</td>
+                <td>Vale</td>
+            </tr>
+            <tr>
+                <td>Andrews</td>
+                <td>Vale</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <p>Mesclando Colunas utiliza-se o atributo <mark>colspan=NUM</mark></p>
+        <p>Mesclando Linhas utiliza-se o atributo <mark>rowspan=NUM</mark></p>
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefone</th>
+            </tr>
+            
+            <tr>
+                <td>Andre</td>
+                <td>1234-5678</td>
+                <td>9876-4321</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <td>Andre Vale</th>
+            </tr>
+            
+            <tr>
+                <th rowspan="2">Telefone</td>
+                <td>1234-5678</td>
+            </tr>
+            <tr>
+                <td>9876-4321</td>
+            </tr>
+        </table>
+    
+    </body>
+</html>

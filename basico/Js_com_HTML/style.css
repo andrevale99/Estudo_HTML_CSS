@@ -1,0 +1,28 @@
+#btt
+{
+    background-color: yellow;
+}
+
+.aprovado
+{
+    font-size: 2cm;
+    background-color: greenyellow;
+
+    border-style: solid;
+}
+
+.aprovado_por_nota
+{
+    font-size: 2cm;
+    background-color: yellow;
+
+    border-style: solid;
+}
+
+.reprovado
+{
+    font-size: 2cm;
+    background-color: red;
+
+    border-style: solid;
+}

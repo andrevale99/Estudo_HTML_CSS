@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Médias</title>
+        <link rel="stylesheet" href="../style.css">
+        <script src="../js/funcstios.js"></script>
+    </head>
+
+    <body>
+        <h1>Médias</h1>
+        <p>Página que calcula a média aritmética de um aluno e avisa se foi: </p>
+        <ul>
+            <li>Aprovado (média >= 7)</li>
+            <li>Aprovado por nota (média >= 5 e média < 7)</li>
+            <li>Reprovado (média < 5 )</li>
+        </ul>
+
+        <p>Use este <a href="../index.html">link</a> para voltar para a página principal</p>
+        
+        <br>
+
+        <ol>
+            <li>P1: <input type="number" id="p1" min="0" max="10" value="0"></li>
+            <li>P2: <input type="number" id="p2" min="0" max="10" value="0"></li>
+            <li>P3: <input type="number" id="p3" min="0" max="10" value="0"></li>
+        </ol>
+
+        <button onclick="calcular_media('p1', 'p2', 'p3', 'result')" id="btt">calcular</button>
+
+        <br>
+
+        <h3 id="result" class=""></h3>
+    </body>
+</html>

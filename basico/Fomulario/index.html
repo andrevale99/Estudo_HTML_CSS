@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Formulário</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <h1>Formulário</h1>
-        <p>
-            Criação de um formulário, possuindo vários tipos de entrada, como também algumas manipulações em DOM
-            com javascript.
-        </p>
-        <hr>
+<head>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- No atributo "action" deve-se colocar o link do servidor que ira receber os dados
+<body>
+    <h1>Formulário</h1>
+    <p>
+        Criação de um formulário, possuindo vários tipos de entrada
+    </p>
+    <hr>
+
+    <!-- No atributo "action" deve-se colocar o link do servidor que ira receber os dados
 
         "Perceba que foi utilizado o método GET para envio dos dados. Esse método utiliza o próprio endereço (URL) 
         para transferir os dados ao servidor. Além do método GET, existe o método POST, 
@@ -21,35 +21,96 @@
         (IMD, Aula 07 - Formulários)
         -->
 
-        <!--
+    <!--
             "Perceba que foi necessário definir o atributo name para cada campo de entrada do formulário. 
             A definição do atributo "name" serve para facilitar a identificação do campo no 
             formulário pelo programa escrito no servidor."
             IMD, Aula 07 - Formulários)
         -->
-        <form action="" method="GET">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" maxlength="50" size="40" id="nome">
+    <form action="" method="GET">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" maxlength="50" size="40" id="nome">
 
-            <br><br>
+        <br><br>
 
-            <label for="idade">Idade</label>
-            <input type="number" min="0" id="idade">
+        <label for="idade">Idade</label>
+        <input type="number" min="0" id="idade">
 
-            <br><br>
+        <br><br>
 
-            <input type="radio" name="genero" value="Masculino" id="radio_M"> Masculino
-            <input type="radio" name="genero" value="Feminino" id="radio_F"> Feminino
-            <input type="radio" name="genero" value="Outro" id="radio_O"> Outro
-            
-            <br><br>
+        <input type="radio" name="genero" value="Masculino" id="radio_M"> Masculino
+        <input type="radio" name="genero" value="Feminino" id="radio_F"> Feminino
+        <input type="radio" name="genero" value="Outro" id="radio_O"> Outro
 
-            <input type="checkbox" name="carro" value="carro" id="check_carro">Carro
-            <input type="checkbox" name="moto" value="moto" id="check_moto">Moto
+        <br><br>
 
-            <br><br>
+        <input type="checkbox" name="carro" value="carro" id="check_carro">Carro
+        <input type="checkbox" name="moto" value="moto" id="check_moto">Moto
 
-            <input type="submit" value="Enviar" id="send_data">
-        </form>
-    </body>
+        <br><br>
+
+        <label for="i-date">Qual o dia do seu aniverário?</label>
+        <input type="date" name="bday" id="i-date" max="2019-05-20">
+
+        <br /><br>
+
+        <label for="i-time">Qual horário de chegada?</label>
+        <input type="datetime-local" name="time" id="i-time">
+
+        <br /><br>
+
+        <label for="i-email">E-mail</label>
+        <input type="email" name="email" id="i-email">
+
+        <br><br>
+
+        <label for="i-file">Selecione um arquivo:</label>
+        <input type="file" name="myFile" id="i-file">
+
+        <br><br>
+
+        <label for="i-month">Escolha o mês de seu aniversário</label>
+        <input type="month" name="bdaymonth" id="i-month">
+        
+        <br><br>
+
+        <label for="i-number">number</label>
+        <input type="number" name="quantity" min="0" max="100" step="10" id="number">
+        <br><br>
+
+        <label for="i-range">range:</label>
+        <input type="range" name="points" min="0" max="10" id="i-range">
+        
+        <br><br>
+
+        <label for="i-search">search:</label>
+        <input type="search" name="googlesearch" id="i-search">
+        
+        <br><br>
+
+        <label for="i-tel">Telefone</label>
+        <input type="tel" name="phone" pattern="[0-9]{5}-[0-9]{4}" id="i-tel">
+        
+        <br><br>
+
+        <label for="i-time">time:</label>
+        <input type="time" name="usr_time" id="i-time">
+        
+        <br><br>
+
+        <label for="i-url">URL: </label>
+        <input type="url" name="homepage" id="url">
+        
+        <br><br>
+
+        <label for="i-week">Selecione a semana</label>
+        <input type="week" name="week_year" id="i-week">
+        
+        <br><br>
+
+        <input type="submit" value="Enviar" id="send_data">
+        <input type="reset" id="reset_data">
+    </form>
+</body>
+
 </html>

@@ -1,0 +1,15 @@
+#mod_caixa
+{
+    top: 0px;
+    left: 20%;
+    position: fixed;
+}
+
+#img_imd
+{
+    display: block;
+    height: auto;
+    width: 50%;
+
+    position: static;
+}

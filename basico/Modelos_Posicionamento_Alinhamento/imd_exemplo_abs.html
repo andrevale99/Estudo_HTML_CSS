@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Absolute</title>
+<style>
+
+div {
+  background-color: grey;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+div.relative {
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+
+div.absolute {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  width: 200px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+
+  <div class="relative"> Relativo
+    <div class="absolute">Absoluto</div>
+  </div>
+
+  <a href="index.html">Voltar</a>
+
+  <p>
+    O posicionamento absolute controla o posicionamento de um elemento em relação à posição do elemento pai, 
+    que no que lhe concerne, deve ter um posicionamento diferente de static. Caso não haja um elemento pai com 
+    posicionamento diferente de static, 
+    a página toda será utilizada como referência.
+  </p>
+</body>
+</html>

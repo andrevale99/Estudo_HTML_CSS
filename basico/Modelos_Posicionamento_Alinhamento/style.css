@@ -13,3 +13,55 @@
 
     position: static;
 }
+
+#div_over_vis
+{
+    background-color: yellow;
+
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+}
+
+#div_over_hidden
+{
+    background-color: red;
+
+    overflow: hidden;
+
+    margin: auto;
+
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+}
+
+#div_over_scroll
+{
+    background-color: red;
+
+    overflow: scroll;
+
+    margin: auto;
+
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+}
+
+#div_over_auto
+{
+    background-color: red;
+
+    overflow: scroll;
+
+    margin: auto;
+
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+}
